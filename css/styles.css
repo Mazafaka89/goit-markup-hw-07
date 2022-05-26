@@ -226,7 +226,7 @@ transition: color 250ms var(--timing-function);
         max-width: 1600px;
         margin: 0 auto;
 }
-.hero-title {
+.hero__title {
 font-weight: 900;
 font-size: 44px;
 line-height: 1.36;
@@ -242,7 +242,7 @@ text-transform: uppercase;
     color: var(--white-bc-color);
 }
 
-.hero-btn { 
+.hero__btn { 
     width: 200px; 
     height: 50px;
     border: none;
@@ -266,39 +266,28 @@ cursor: pointer;
 transition: color 250ms var(--timing-function), background-color 250ms var(--timing-function);
 }
 
-.hero-btn:hover,
-.hero-btn:focus {
+.hero__btn:hover,
+.hero__btn:focus {
     background-color: #188ce8;
 }
 
 /* --- features --- */
 
-.features {
+.about-section {
     padding-top: 94px;
     padding-bottom: 94px;
 }
 
-.features-list {
+.features__list {
     display: flex;
 }
 
-/*.features-item::before {
-    display: block;
-    content: '';
-    height: 120px;
 
-    background-image: url(../images/features_antenna.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: red;
-} */
-
-.features-item:not(:last-child) {
+.features__item:not(:last-child) {
     margin-right: 30px;
 }
 
-.features-icon {
+.features__icon {
 display: flex;
 max-width: 270px;
 height: 120px;
@@ -310,7 +299,7 @@ margin-bottom: 30px;
     background-color: var(--team-bc-color);   
 }
 
-.features-top-text {
+.features__title {
     margin-bottom: 10px;
 
 font-style: normal;
@@ -323,7 +312,7 @@ text-transform: uppercase;
 
 }
 
-.features-text { 
+.features__text { 
 max-width: 270px;   
 
     color: var(--secondary-text-color);
@@ -331,15 +320,11 @@ max-width: 270px;
 
 /* --- <work> Чем мы занимаемся --- */
 
-.work {
+.study-section {
     padding-bottom: 94px;
 } 
 
-.work-pictures {
-    display: flex;
-}
-
-.work-title {
+.study__title {
     margin-left: auto;
     margin-right: auto;    
     margin-bottom: 50px;
@@ -352,15 +337,19 @@ letter-spacing: 0.03em;
     color: var(--primary-text-color);
 }
 
-.work-image:not(:last-child) {
+.work__list {
+    display: flex;
+}
+
+.work__item:not(:last-child) {
     margin-right: 30px;
 }
 
-.work-box {
+.work__box {
 position: relative;
 }
 
-.work-text {
+.work__title {
 position: absolute;
 bottom: 0;
   
