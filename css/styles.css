@@ -1,28 +1,3 @@
-/* --- colors --- 
--- Head -- 
-Студия #2196F3; (голубой)  Портфолио #212121; (черный)  Контакты  #212121 (черный);
-почта  #2196F3; (голубой)  телефон #757575 (серый);
-Фон background: #FFFFFF (белый);
-
--- Hero --
-Фон background: #2F303A (черный); Текст #FFFFFF (белый) ?  Кнопка: Текст #FFFFFF (белый) ?,
-hover button #188CE8  
-Фон #2196F3 (голубой) 
-
--- Features --
-Фон background: #E5E5E5 (белый)
-Внимание к деталям #212121 (черный); Пунктуальность #212121; Планирование #212121; Тех #212121;
-Текст #F5F4FA (серый)
-
--- Чем мы занимаемся и Команда --
-Фон #E5E5E5 (белый)
-Заголовок Команда и имена #212121 (черный)
-Фон в команде и должности #f5f4fa (серый)
-
--- footer --
-Фон #2F303A (черный)
-
-*/
 :root {
     --primary-bc-color: #E5E5E5;
     --secondary-bc-color: #2F303A;
@@ -105,29 +80,25 @@ hover button #188CE8
  /* ----- Header ----- */
 
  .header {
-     padding-top: 24px;
-     padding-bottom: 25px;
-     border-bottom: 1px solid #eeeeee;
+    padding-top: 24px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #eeeeee;
 
-     background-color: var(--white-bc-color);
- }
+    background-color: var(--white-bc-color);
+}
 
 .header .container {
-    display: flex;
-    align-items: center;
-}
-
-.header-list {
-    display: flex;
+   display: flex;
+   align-items: center;
 }
 
 
-/* --- header-logo --- */
+/* --- logo --- */
 
 
 .header-logo {
-    display: block;
-    margin-right: 93px;
+   display: block;
+   margin-right: 93px;
 
 font-family: 'Raleway';
 font-weight: 700;
@@ -135,16 +106,16 @@ font-size: 26px;
 line-height: 1.19;
 letter-spacing: 0.03em;
 
-    color: var(--accent-color);
+   color: var(--accent-color);
 }
 
-.header-logo-black {
-    color: var(--primary-text-color);
+/* --- menu-list --- */
+
+.menu-list {
+   display: flex;
 }
 
-/* --- header-list --- */
-
-.header-link {
+.menu-list__link {
 padding-top: 32px;
 padding-bottom: 32px;
 
@@ -155,94 +126,86 @@ position: relative;
 transition: color 250ms var(--timing-function);
 }
 
-.header-link:hover,
-.header-link:focus {
-    color: var(--accent-color);
+.menu-list__link:hover,
+.menu-list__link:focus {
+   color: var(--accent-color);
 }
 
 .current::after {
-    content: '';
+   content: '';
 
-    display: block;
-    position: absolute;
-    left: 0px;
-    bottom: -1px;
-    border-radius: 2px;
+   display: block;
+   position: absolute;
+   left: 0px;
+   bottom: -1px;
+   border-radius: 2px;
 
-    width: 100%;
-    height: 4px;
+   width: 100%;
+   height: 4px;
 
-    background-color: var(--accent-color);
+   background-color: var(--accent-color);
 }
 
 .current {
-    color: var(--accent-color);
+   color: var(--accent-color);
 }
 
-.header-item:not(:last-child) {
-    margin-right: 50px;
+.menu-list__item:not(:last-child) {
+   margin-right: 50px;
 }
 
 
-/* --- header-address --- */
+/* --- address --- */
 
-.header-nav {
-    margin-left: auto;
+.header-navigation {
+   margin-left: auto;
 }
 
-.header-address {
-    display: flex;
+.address {
+   display: flex;
 }
 
-.header-mail-link {
-    display: flex;
-    margin-right: 50px;
-    align-items: center;
+.address__mail {
+   display: flex;
+   margin-right: 50px;
+   align-items: center;
 
-    color: var(--secondary-text-color);
+   color: var(--secondary-text-color);
 
-    transition: color 250ms var(--timing-function);
+   transition: color 250ms var(--timing-function);
 }
 
-.header-mail-link:hover,
-.header-mail-link:focus {
-    color: var(--accent-color);  
+.address__mail:hover,
+.address__mail:focus {
+   color: var(--accent-color);  
 }
 
-.header-mail-icon {
-    margin-right: 10px;
-    
-    fill: currentColor;
-    }
+.address__mail-icon {
+   margin-right: 10px;
+   
+   fill: currentColor;
+   }
 
-.header-tel-link {
-    display: flex;
-    align-items: center;
+.address__tel {
+   display: flex;
+   align-items: center;
 
-    color: var(--secondary-text-color);  
+   color: var(--secondary-text-color);  
 
-    transition: color 250ms var(--timing-function);
+   transition: color 250ms var(--timing-function);
 }
 
-.header-tel-link:hover,
-.header-tel-link:focus {
-    color: var(--accent-color);
+.address__tel:hover,
+.address__tel:focus {
+   color: var(--accent-color);
 }
 
-.header-tel-icon {
-    margin-right: 10px;
-    align-items: baseline;
-    
-    fill: currentColor;
-    }
-
-/*
-.header-tel-link .header-tel-icon:hover,
-.header-tel-link .header-tel-icon:focus {
-    color: var(--accent-color); 
-    fill: var(--accent-color); 
-}
-*/
+.address__tel-icon {
+   margin-right: 10px;
+   align-items: baseline;
+   
+   fill: currentColor;
+   }
 
 /* ----- Hero ----- */
 
