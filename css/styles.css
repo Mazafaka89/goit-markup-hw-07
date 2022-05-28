@@ -32,7 +32,7 @@
      max-width: 100%;
      height: auto;
  } */
-
+/*
  .link {
      text-decoration: none;
  }
@@ -47,9 +47,9 @@
      padding-right: 15px;
      margin: 0 auto;
      /*
-     outline: 1px solid red; */
- }
-
+     outline: 1px solid red; 
+ } */
+/*
  .logo--black {
      color: var(--primary-text-color);
  }
@@ -57,7 +57,7 @@
  .logo--white {
      color: var(--white-bc-color);
  }
-
+/*
  .visually-hidden {
     position: absolute;
     white-space: nowrap;
@@ -69,7 +69,7 @@
     clip: rect(0 0 0 0);
     clip-path: inset(50%);
     margin: -1px;
- }
+ } */
 /*
  .head-text {
     font-weight: 500;
@@ -93,7 +93,7 @@
 
 
 
-/* --- features --- */
+/* --- features --- 
 
 .about-section {
     padding-top: 94px;
@@ -138,10 +138,10 @@ text-transform: uppercase;
 max-width: 270px;   
 
     color: var(--secondary-text-color);
-}
+} */
 
-/* --- <work> Чем мы занимаемся --- */
-
+ /*--- <work> Чем мы занимаемся --- */
+/*
 .study-section {
     padding-bottom: 94px;
 } 
@@ -159,19 +159,19 @@ letter-spacing: 0.03em;
     color: var(--primary-text-color);
 }
 
-.work {
+.study-list {
     display: flex;
 }
 
-.work__item:not(:last-child) {
+.study-list__item:not(:last-child) {
     margin-right: 30px;
 }
 
-.work__box {
+.study-list__box {
 position: relative;
 }
 
-.work__title {
+.study-list__title {
 position: absolute;
 bottom: 0;
   
@@ -189,10 +189,11 @@ height: 70px;
 
 color: var(--white-bc-color);
 background-color: #2F303ACC;
-}
+} */
 
 /* --- <team> Наша команда --- */
 
+/*
 .team {
     padding-top: 94px;
     padding-bottom: 94px;
@@ -289,10 +290,10 @@ text-align: center;
 .team-social-link:hover .team-social-icon,
 .team-social-link:focus .team-social-icon{
     fill: var(--white-bc-color);
-}
-
+} 
+*/
 /* ----- Постоянные клиенты ----- */
-
+/*
 .clients {
     padding: 94px 0px;
 }
@@ -349,11 +350,11 @@ letter-spacing: 0.03em;
 .clients-link-icon {
     display: flex;
 }
-
-
+*/
 /* ----- <footer> Контакты ----- */
 
-.footer {
+
+.footer-section {
     padding-top: 60px;
     padding-bottom: 60px;
 
