@@ -1,0 +1,20 @@
+.start-page {
+    font-family: "Roboto", Tahoma, sans-serif;
+    background-color: var(--white-bc-color);
+    color: var(--primary-text-color);
+ }
+
+ p,h1,h2,h3,h4,h5,h6 {
+     margin: 0;
+ }
+
+ ul, ol {
+    padding-left: 0;
+    margin: 0;
+ }
+
+ img {
+     display: block;
+     max-width: 100%;
+     height: auto;
+ }
