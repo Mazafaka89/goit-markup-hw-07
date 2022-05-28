@@ -353,7 +353,7 @@ letter-spacing: 0.03em;
 */
 /* ----- <footer> Контакты ----- */
 
-
+/*
 .footer-section {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -411,7 +411,7 @@ letter-spacing: 0.03em;
 }
 
 
-/* ----- Присоединяйтесь ----- */
+/* ----- Присоединяйтесь ----- 
 
 .footer-social {
     margin-left: 70px;
@@ -468,7 +468,7 @@ text-align: left;
     fill: var(--white-bc-color);
 }
 
-/* ----- Mailing-List ----- */
+/* ----- Mailing-List ----- 
 
 .mailing-list {
     display: block;
@@ -555,7 +555,7 @@ text-align: left;
     top: 50%;
     transform: translateY(-50%);
     margin-left: 10px;
-  }
+  } */
 
 /* Portfolio */
 
@@ -927,7 +927,7 @@ margin-bottom: 20px;
 */
 
 /* ----- Modal ----- */
-
+/*
 .backdrop {
     position: fixed;
     top: 0;
@@ -939,9 +939,6 @@ background-color: #00000033;
 
 transition: opacity 250ms var(--timing-function),
 visibility 250ms var(--timing-function);
-/*display: flex;
-    align-items: center;
-    justify-content: center; */
 }
 
 .backdrop.is-hidden .modal {
@@ -972,7 +969,7 @@ background-color: var(--white-bc-color);
     top: 0;
     right: 0;
     border: none;
-    /*border: 1px solid rgba(0, 0, 0, 0.1); */
+    
     border-radius: 50%;
 
     margin-top: 8px;
@@ -1058,8 +1055,7 @@ background-color: var(--white-bc-color);
 
     left: 12px;
     bottom: 11px;
-        /*top: 50%;
-        transform: translateY(-50%);*/
+       
 fill: var(--primary-text-color);
 transition: fill 250ms var(--timing-function);
 }
@@ -1157,12 +1153,6 @@ transition: fill 250ms var(--timing-function);
     box-shadow: 0 0 0 0.1em var(--accent-color);
   }
 
-
-/*
-.input-check:focus + .check-text span {
-    background-color: var(--accent-color);  
-} */
-
 .modal-submit-btn {
     position: absolute;
     width: 200px; 
@@ -1190,4 +1180,4 @@ transition: box-shadow 250ms var(--timing-function),
     outline: none;
     background-color: #188ce8;
     box-shadow: 0 0 0 0.2em #AFB1B8;
-} 
+} */
