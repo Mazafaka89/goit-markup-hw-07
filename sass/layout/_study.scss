@@ -17,10 +17,10 @@ letter-spacing: 0.03em;
 
 .study-list {
     display: flex;
-}
 
-.study-list__item:not(:last-child) {
-    margin-right: 30px;
+    &__item:not(:last-child) {
+        margin-right: 30px;
+    }
 }
 
 .study-list__box {

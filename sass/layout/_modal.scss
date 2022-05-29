@@ -167,15 +167,7 @@ transition: fill 250ms var(--timing-function);
       margin-bottom: 30px;
   }
 
-  .check-text::before {
-      content: "";
-      width: 16px;
-      height: 15px;
-
-      margin-right: 7px;
-      border: 2px solid var(--primary-text-color);
-      border-radius: 4px;
-  }
+  
 
   .check-text {
     display: flex;
@@ -188,22 +180,32 @@ transition: fill 250ms var(--timing-function);
       margin-left: 14px;
 
       color: var(--secondary-text-color);
-  }
 
-  .input-check:checked + .check-text::before {
-      border: none;
+      &::before {
+        content: "";
+        width: 16px;
+        height: 15px;
+  
+        margin-right: 7px;
+        border: 2px solid var(--primary-text-color);
+        border-radius: 4px;
 
-      background-image: url(../images/check.svg);
-      background-repeat: no-repeat;
-      background-position: center;
+        .input-check:checked + & {
+            border: none;
+      
+            background-image: url(../images/check.svg);
+            background-repeat: no-repeat;
+            background-position: center;
+      
+            transition: box-shadow 250ms var(--timing-function);
+            border-color: var(--accent-color);
+            background-color: var(--accent-color);
 
-      transition: box-shadow 250ms var(--timing-function);
-      border-color: var(--accent-color);
-      background-color: var(--accent-color);
-  }
-
-  .input-check:focus + .check-text::before {
-    border-color: var(--accent-color);
+            .input-check:focus + & {
+                border-color: var(--accent-color);
+              }
+        }
+    }
   }
 
   .checkbox-link {

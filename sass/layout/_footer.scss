@@ -25,45 +25,46 @@ letter-spacing: 0.03em;
 
 .contacts-list {
     max-width: 231px;
-}
-.contacts-list__address {
-    display: block;
-    margin-bottom: 9px;
 
-    color: var(--white-bc-color);
-}
-.contacts-list__mail {
-    display: block;
-    margin-bottom: 9px;
+    &__address {
+        display: block;
+        margin-bottom: 9px;
+    
+        color: var(--white-bc-color);
+    }
 
-    color: rgba(255, 255, 255, 0.6); 
-    transition: color 250ms var(--timing-function);
+    &__mail {
+        display: block;
+        margin-bottom: 9px;
+    
+        color: rgba(255, 255, 255, 0.6); 
+        transition: color 250ms var(--timing-function);
+    }
+    &__mail:hover,
+    &__mail:focus {
+        color: var(--accent-color);
+    }
+    
+    &__tel {
+        color: rgba(255, 255, 255, 0.6);
+    
+        transition: color 250ms var(--timing-function);
+    }
+    &__tel:hover,
+    &__tel:focus {
+        color: var(--accent-color);
+    }
 }
-.contacts-list__mail:hover,
-.contacts-list__mail:focus {
-    color: var(--accent-color);
-}
-
-.contacts-list__tel {
-    color: rgba(255, 255, 255, 0.6);
-
-    transition: color 250ms var(--timing-function);
-}
-.contacts-list__tel:hover,
-.contacts-list__tel:focus {
-    color: var(--accent-color);
-}
-
 
 /* ----- Присоединяйтесь ----- */
 
-.footer-social {
+.footer-net {
     margin-left: 70px;
     display: block;
     justify-content: center;
 }
 
-.social__title {
+.net__title {
 
 font-size: 14px;
 line-height: 1.14;
@@ -78,38 +79,38 @@ text-align: left;
 .connect {
     display: flex;
     justify-content: center;
-}
 
-.connect__item + .connect__item {
-    margin-left: 10px;
-}
+    &__item + &__item {
+        margin-left: 10px;
+    }
 
-.connect__link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    &__link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+    
+        background-color: rgba(255, 255, 255, 0.1);
+        color: var(--white-bc-color);
+    
+        transition: background-color 250ms var(--timing-function);
+    }
+    
+    &__link:hover,
+    &__link:focus {
+        background-color: var(--accent-color)
+    }
 
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-
-    background-color: rgba(255, 255, 255, 0.1);
-    color: var(--white-bc-color);
-
-    transition: background-color 250ms var(--timing-function);
-}
-
-.connect__link:hover,
-.connect__link:focus {
-    background-color: var(--accent-color)
-}
-
-.connect__icon {
-    fill: var(--white-bc-color)
-}
-
-.connect__link:hover .connect__icon {
-    fill: var(--white-bc-color);
+    &__icon {
+        fill: var(--white-bc-color)
+    }
+    
+    .connect__link:hover & {
+        fill: var(--white-bc-color);
+    }
 }
 
 /* ----- Mailing-List ----- */
@@ -122,7 +123,7 @@ text-align: left;
     height: 86px;
 }
 
-.subscribe__title {
+.form__title {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.17;
@@ -132,52 +133,53 @@ text-align: left;
     color: var(--white-bc-color);
 }
 
-.subscribe__field {
+.subscribe {
     display: flex;
+
+    &__email {
+        width: 358px;
+        height: 50px;
+    
+        padding-left: 16px;
+        border: 1px solid #FFFFFF99;
+        border-radius: 4px;
+    
+        color: #FFFFFF99;
+        background-color: transparent; 
+        transition: border 250ms var(--timing-function),
+                     color 250ms var(--timing-function);
+    }
+    
+    &__email:focus {
+      outline: none;
+      color: var(--white-bc-color);
+      border: 1px solid var(--accent-color);
+    }
+    
+    &__email::placeholder {
+        color: #FFFFFF99;
+        transition: color 250ms var(--timing-function);
+      }
+
+      &-email:focus::placeholder {
+        color: var(--accent-color);
+      }
+
+      &__btn {
+        position: relative;
+        width: 200px;
+        height: 50px;
+        margin-left: 12px;
+        background-color: var(--accent-color);
+        border: 2px solid transparent;
+        border-radius: 4px;
+        transition: border 250ms var(--timing-function);
+      }
+      &__btn:focus {
+        outline: none;
+        border: 2px solid #FFFFFF99;
+      }
 }
-
-.subscribe__email {
-    width: 358px;
-    height: 50px;
-
-    padding-left: 16px;
-    border: 1px solid #FFFFFF99;
-    border-radius: 4px;
-
-    color: #FFFFFF99;
-    background-color: transparent; 
-    transition: border 250ms var(--timing-function),
-                 color 250ms var(--timing-function);
-}
-
-.subscribe__email:focus {
-  outline: none;
-  color: var(--white-bc-color);
-  border: 1px solid var(--accent-color);
-}
-
-.subscribe__email::placeholder {
-    color: #FFFFFF99;
-    transition: color 250ms var(--timing-function);
-  }
-  .subscribe-email:focus::placeholder {
-    color: var(--accent-color);
-  }
-
-  .subscribe__btn {
-    position: relative;
-    width: 200px;
-    height: 50px;
-    margin-left: 12px;
-    background-color: var(--accent-color);
-    border: 2px solid transparent;
-    border-radius: 4px;
-    transition: border 250ms var(--timing-function);
-  }
-  .subscribe__btn:focus {
-    outline: none;
-    border: 2px solid #FFFFFF99;
-  }
 
   .subscribe__text {
     position: absolute;
