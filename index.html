@@ -378,64 +378,64 @@
 
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button type="button" class="modal-btn" data-modal-close>
-            <svg class="modal-icon" width="30" height="30">
+        <button type="button" class="modal__close" data-modal-close>
+            <svg class="modal__icon" width="30" height="30">
                 <use href="./images/symbol-defs.svg#icon-close"></use>
             </svg>
         </button>
         
-        <p class="modal-tittle">Оставьте свои данные, мы вам перезвоним</p>
+        <p class="modal__tittle">Оставьте свои данные, мы вам перезвоним</p>
 
-        <form>
+        <form class="nomination">
 
-        <div class="modal-field">
-            <label class="modal-label" for="name">Имя</label>
-            <div class="modal-input-wrap">
-            <input type="text" class="modal-input" name="name" id="name"/>
+        <div class="field">
+            <label class="field__label" for="name">Имя</label>
+            <div class="field__wrap">
+            <input type="text" class="field__input" name="name" id="name"/>
         
-        <svg class="input-icon" width="18" height="18">
+        <svg class="field__icon" width="18" height="18">
             <use href="./images/symbol-defs.svg#icon-person-black"></use>
         </svg>
             </div>
         </div>
 
-        <div class="modal-field">
-            <label class="modal-label" for="tel">Телефон</label>
-            <div class="modal-input-wrap">
-            <input type="tel" class="modal-input" name="tel" id="tel"/>
+        <div class="field">
+            <label class="field__label" for="tel">Телефон</label>
+            <div class="field__wrap">
+            <input type="tel" class="field__input" name="tel" id="tel"/>
         
-        <svg class="input-icon" width="18" height="18">
+        <svg class="field__icon" width="18" height="18">
             <use href="./images/symbol-defs.svg#icon-phone-black"></use>
         </svg>
             </div>
         </div>
 
-        <div class="modal-field">
-            <label class="modal-label" for="email">Почта</label>
-            <div class="modal-input-wrap">
-            <input type="email" class="modal-input" name="email" id="email"/>
+        <div class="field">
+            <label class="field__label" for="email">Почта</label>
+            <div class="field__wrap">
+            <input type="email" class="field__input" name="email" id="email"/>
         
-        <svg class="input-icon" width="18" height="18">
+        <svg class="field__icon" width="18" height="18">
             <use href="./images/symbol-defs.svg#icon-email-black"></use>
         </svg>
             </div>
         </div>
 
-        <div class="modal-comment-field">
-            <label class="modal-label" for="comment">Комментарий</label>
-            <textarea name="comment" id="comment" placeholder="Введите текст" class="modal-comment"></textarea>
+        <div class="field__comment">
+            <label class="field__label" for="comment">Комментарий</label>
+            <textarea name="comment" id="comment" placeholder="Введите текст" class="field__write"></textarea>
         </div>
 
-        <div class="modal-checkbox-field">
-            <input type="checkbox" class="input-check visually-hidden" id="input-check" name="policy" value="policy" />
-            <label for="input-check" class="check-text">
+        <div class="field__checkbox">
+            <input type="checkbox" class="field__check visually-hidden" id="field__check" name="policy" value="policy" />
+            <label for="field__check" class="field__text">
             <a class="checkbox-text">Соглашаюсь с рассылкой и принимаю</a>
-            <a href="" class="checkbox-link cursor">Условия договора</a>
+            <a href="" class="field__link cursor">Условия договора</a>
             </label>
 
         </div>
 
-            <button type="submit" class="modal-submit-btn">Отправить</button>
+            <button type="submit" class="field__submit">Отправить</button>
 
         </form> 
       </div>  

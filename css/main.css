@@ -692,9 +692,10 @@ img {
   background-color: rgba(0, 0, 0, 0.2);
   transition: opacity 250ms var(--timing-function), visibility 250ms var(--timing-function);
 }
-
-.backdrop.is-hidden .modal {
-  transform: scale(0.5);
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
 }
 
 .modal {
@@ -710,8 +711,10 @@ img {
   transition: transform 250ms var(--timing-function);
   background-color: var(--white-bc-color);
 }
-
-.modal-btn {
+.backdrop.is-hidden .modal {
+  transform: scale(0.5);
+}
+.modal__close {
   position: absolute;
   top: 0;
   right: 0;
@@ -724,18 +727,11 @@ img {
   fill: var(--primary-text-color);
   transition: fill 250ms var(--timing-function);
 }
-
-.modal-btn:hover {
+.modal__close:hover {
   fill: var(--accent-color);
 }
 
-.is-hidden {
-  opacity: 0;
-  pointer-events: none;
-  visibility: hidden;
-}
-
-.modal-tittle {
+.modal__tittle {
   width: 448px;
   font-weight: 700;
   font-size: 20px;
@@ -746,23 +742,20 @@ img {
   color: var(--primary-text-color);
 }
 
-.modal-field {
+.field {
   margin-bottom: 10px;
 }
-
-.modal-comment-field {
-  margin-bottom: 20px;
-}
-
-.modal-label {
+.field__label {
   display: block;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.16;
   color: var(--secondary-text-color);
 }
-
-.modal-input {
+.field__wrap {
+  position: relative;
+}
+.field__input {
   width: 100%;
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -772,30 +765,28 @@ img {
   transition: border 250ms var(--timing-function);
   color: var(--secondary-text-color);
 }
-
-.modal-input:focus {
+.field__input:focus {
   outline: none;
   border: 1px solid #2196F3;
   fill: var(--accent-color);
 }
 
-.modal-input-wrap {
-  position: relative;
-}
-
-.input-icon {
+.field__icon {
   position: absolute;
   left: 12px;
   bottom: 11px;
   fill: var(--primary-text-color);
   transition: fill 250ms var(--timing-function);
 }
-
-.modal-input:focus + .input-icon {
+.field__input:focus + .field__icon {
   fill: var(--accent-color);
 }
 
-.modal-comment {
+.field__comment {
+  margin-bottom: 20px;
+}
+
+.field__write {
   width: 100%;
   height: 120px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -810,21 +801,19 @@ img {
   transition: border 250ms var(--timing-function);
   color: var(--secondary-text-color);
 }
-
-.modal-comment:focus {
+.field__write:focus {
   outline: none;
   border: 1px solid var(--accent-color);
 }
-
-.modal-comment::placeholder {
+.field__write::placeholder {
   color: rgba(117, 117, 117, 0.5019607843);
 }
 
-.modal-checkbox-field {
+.field__checkbox {
   margin-bottom: 30px;
 }
 
-.check-text {
+.field__text {
   display: flex;
   align-items: center;
   font-size: 14px;
@@ -833,7 +822,7 @@ img {
   margin-left: 14px;
   color: var(--secondary-text-color);
 }
-.check-text::before {
+.field__text::before {
   content: "";
   width: 16px;
   height: 15px;
@@ -841,7 +830,7 @@ img {
   border: 2px solid var(--primary-text-color);
   border-radius: 4px;
 }
-.input-check:checked + .check-text::before {
+.field__check:checked + .field__text::before {
   border: none;
   background-image: url(../images/check.svg);
   background-repeat: no-repeat;
@@ -850,11 +839,10 @@ img {
   border-color: var(--accent-color);
   background-color: var(--accent-color);
 }
-.input-check:focus + .input-check:checked + .check-text::before {
+.field__check:focus + .field__check:checked + .field__text::before {
   border-color: var(--accent-color);
 }
-
-.checkbox-link {
+.field__text .field__link {
   font-size: 14px;
   line-height: 1.46;
   letter-spacing: 0.03em;
@@ -863,13 +851,12 @@ img {
   border-radius: 4px;
   transition: box-shadow 250ms var(--timing-function);
 }
-
-.checkbox-link:focus {
+.field__text .field__link:focus {
   outline: none;
   box-shadow: 0 0 0 0.1em var(--accent-color);
 }
 
-.modal-submit-btn {
+.field__submit {
   position: absolute;
   width: 200px;
   height: 50px;
@@ -886,8 +873,7 @@ img {
   background-color: var(--accent-color);
   transition: box-shadow 250ms var(--timing-function), background-color 250ms var(--timing-function);
 }
-
-.modal-submit-btn:focus {
+.field__submit:focus {
   outline: none;
   background-color: #188ce8;
   box-shadow: 0 0 0 0.2em #AFB1B8;
